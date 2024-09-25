@@ -1,0 +1,9 @@
+.hero {
+    background-image: url('https://via.placeholder.com/1500x500');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-bottom: 30px;
+}
