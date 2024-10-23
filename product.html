@@ -3,7 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PADAYUN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+
+     <style>
+        body {
+            padding-top: 70px; 
+            background-color: #f5f5f5; 
+            font-family: 'Roboto', sans-serif; 
+            color: #333;
+        }
+        .hero {
+        background-color: #007bff; 
+        color: black; 
+        padding: 5rem 0;
+        text-align: center; 
+        }
+        .hero h1 {
+        font-size: 3rem; 
+        margin-bottom: 1rem;
+        }
+
+.hero p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem; 
+}
+
+.hero .btn {
+    background-color: #ffffff;
+    color: #007bff; 
+    border: none; 
+}
+
+.hero .btn:hover {
+    background-color: #0056b3; 
+    color: white;
+}
+        .navbar {
+            background-color: #343a40; 
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase; 
+            margin: 10px;
+        }
+
+        .hero {
+            background-image: url('https://your-image-url.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            padding: 60px 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem; 
+            font-weight: 700;
+            letter-spacing: 1px;  
+        }
+
+        .hero p {
+            font-size: 1.25rem;  
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn-light {
+            color: #007bff;
+            background-color: #ffffff;
+            font-weight: 500; 
+        }
+ 
+        .card {
+            border: none;
+            transition: transform 0.2s;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+
+        .card-title {
+            color: #007bff; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 1rem;  
+            line-height: 1.6;  
+        }
+ 
+        footer {
+            background-color: #343a40; 
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            padding: 20px 0;
+            text-align: center; 
+            width: 100%; 
+            position: relative; 
+            bottom: 0; 
+            left: 0; 
+        }
+
+        footer a {
+            color: #ffffff; 
+        }
+
+        footer a:hover {
+            color: #007bff;  
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        footer p {
+            font-size: 1rem;  
+        }
+     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -21,11 +149,70 @@
                         <a class="dropdown-item" href="index.html">Home</a>
                         <a class="dropdown-item" href="about.html">About Us</a>
                         <a class="dropdown-item" href="contact.html">Contact Us</a>
-                        <a class="dropdown-item" href="products.html">Products</a>
+                        <a class="dropdown-item" href="product.html">Products</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
+    <header class="hero text-white text-center py-5">
+        <div class="container">
+            <h1>PRODUCTS</h1>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://motorpartsonline.com.my/cdn/shop/files/SolfiliSwingarm03SA001S.jpg?v=1703233325" class="card-img-top" alt="SOLFILI Swing Arm Y15/Y16">
+                    <div class="card-body">
+                        <h5 class="card-title">SOLFILI Swing Arm Y15/Y16</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://motorpartsonline.com.my/cdn/shop/files/Slide31.jpg?v=1711935347" class="card-img-top" alt="SOLFILI Cylinder Head">
+                    <div class="card-body">
+                        <h5 class="card-title">SOLFILI Cylinder Head</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://motorpartsonline.com.my/cdn/shop/files/Slide33_9d34628e-bafc-4935-a207-99484bb0fe15.jpg?v=1713347113" class="card-img-top" alt="SOLFILI GT-2A Monoshock">
+                    <div class="card-body">
+                        <h5 class="card-title">SOLFILI GT-2A Monoshock</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<footer class="bg-dark text-center py-4">
+    <p>&copy; 2024 PADAYUN. All rights reserved.</p>
+    <div>
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052" alt="Youtube">
+        </a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
