@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PADAYUN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 70px;
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-family: 'Poppins', sans-serif; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            margin: 10px
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 20px 0;
+            color: #007bff;
+        }
+
+        .contact-info, .contact-form {
+            margin-top: 30px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h4, .contact-form h4 {
+            color: #343a40;
+        }
+
+        .contact-info p, .contact-form p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            width: 100%;
+            border: none;
+            padding: 10px;
+        }
+
+        .mapouter {
+            display: table;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">PADAYUN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="about.html">About Us</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                        <a class="dropdown-item" href="products.html">Products</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="contact-intro">
+            <p>Welcome to the <strong>PADAYUN</strong> Contact Us page! Here, we believe that every great journey begins with a conversation. Just as a motorcycle thrives on the right parts, we thrive on connections with our customers.</p>
+            <p>At PADAYUN, we’re not just about selling motor parts; we’re about building relationships. Whether you have questions about our products, need assistance with an order, or simply want to share your feedback, we’re here for you.</p>
+            <p>Our office, nestled in the heart of Tankulan, Manolo Fortich, Bukidnon, is always open to welcome your inquiries. We understand that each message you send is important, and we’re committed to providing you with the support you need to keep your vehicles running smoothly.</p>
+            <p>So don’t hesitate—reach out! Let’s fuel your passion for motorcycling together.</p>
+        </div>
+    </div>
+</div>
+
+
+       
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h4>Our Office</h4>
+                    <p><strong>Address:</strong> Tankulan Manolo Fortich, Bukidnon</p>
+                    <p><strong>Phone:</strong> **** *** ****</p>
+                    <p><strong>Email:</strong> <a href="mailto:PADAYUN@gmail.com">info@example.com</a></p>
+                </div>
+            </div>
+
+           
+            <div class="col-md-6">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe
+                            src="https://maps.google.com/maps?q=tankulan%20manolo%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                            width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-form">
+                    <h4>Send Us a Message</h4>
+                    <form action="submit_form.php" method="post">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PADAYUN. All rights reserved.</p>
+        <div>
+            <a href="https://facebook.com" target="https://www.facebook.com/photo/?fbid=122140751282303046&set=a.122093648600303046&__tn__=%3C">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052" alt="Youtube" style="width: 40px; height: 40px;">
+            </a>
+        </div>
+    </footer>
+
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html
